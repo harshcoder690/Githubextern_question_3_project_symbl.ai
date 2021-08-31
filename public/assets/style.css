@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+body {
+    background-color: #343a40;
+}
+
+.navbar {
+    box-shadow: 0 1px 15px rgb(0, 0, 0);
+}
+
+p {
+    color: white;
+}
+
+.avatar {
+    border: 5px solid #dc3545;
+}
+
+.cards {
+    margin: 15px 20px;
+    padding: 20px 0;
+    position: relative;
+}
+
+.MuiPaper-root {
+    position: absolute;
+    top: 40%;
+    width: 320px !important;
+}
+
+.MuiTypography-root {
+    display: inline !important;
+}
+
+.MuiTypography-body2 {
+    display: inline !important;
+    font-size: 1.1rem !important;
+}
+
+@media (max-width: 425px) {
+    .navbar-brand {
+        font-size: 45px !important;
+    }
+    .px-5 {
+        padding: 0 1.75rem !important;
+    }
+}
+
+@media (max-width: 395px) {
+    .navbar-brand {
+        font-size: 40px !important;
+    }
+    .btn {
+        padding: 0.4rem 0.8rem !important;
+    }
+}
