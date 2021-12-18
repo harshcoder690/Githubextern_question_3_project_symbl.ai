@@ -11,10 +11,10 @@ function Navigationbar(props) {
       <>
         <Navbar color="dark" dark expand="md">
             <div className="container">
-                <NavbarBrand href="/" style={brand}><span style={spanColor}>User</span>Info&nbsp;&nbsp;
+                <NavbarBrand href="/" style={brand}><span style={spanColor}>Get</span>Info&nbsp;&nbsp;
                 <GroupIcon style={{ fontSize: 50 }} /></NavbarBrand>
                 <Nav className="ml-auto" navbar>
-                    <Button outline color="danger" size="lg" onClick={props.getUsers}>Get Users</Button>
+                    <Button outline color="danger" size="lg" onClick={props.getUsers}>Get Data</Button>
                 </Nav>
             </div>
         </Navbar>

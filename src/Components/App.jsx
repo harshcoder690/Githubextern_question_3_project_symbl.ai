@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import Navigationbar from './NavBar';
 import Main from './Main';
 import Users from './Users';
@@ -13,28 +13,31 @@ function App() {
     function getData() {
 
         trackPromise(
-            fetch('https://reqres.in/api/users?page=1#')
-                .then(async function(userDetails) {
-                    const users=await userDetails.json();
-                    setUsers(users.data);
-                })
+            fetch('https://random-data-api.com//api/appliance/random_appliance?size=5')
+            .then(async function(userDetails) {
+                const users = await userDetails.json();
+                setUsers(users);
+            })
         )
 
         setTimeout(function() {
             loaded(false);
-        },750);
+        }, 750);
     }
 
-    return (
-        <>
-            <Navigationbar getUsers={getData} />
-            {
-                users.length>0 ? 
-                    (isLoading ? 
-                        <LoadingIndicator/> : <Users users={users} />
-                    ) : <Main />
-            }
-        </>
+    return ( <
+        >
+        <
+        Navigationbar getUsers = { getData }
+        /> {
+            users.length > 0 ?
+                (isLoading ?
+                    <
+                    LoadingIndicator / > : < Users users = { users }
+                    />
+                ) : < Main / >
+        } <
+        />
     );
 }
 
